@@ -25,7 +25,7 @@ class Dropdown extends React.PureComponent {
     dropdownItems: [],
   };
 
-  async getDropdownItems(value) {
+  getDropdownItems = async (value) => {
     const {onChangeFunction} = this.props;
     const items = await onChangeFunction(value);
 
